@@ -1,0 +1,200 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Varela Round', sans-serif;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+}
+
+header > .nav {
+  background-color: #007582;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 15px;
+}
+
+#presentation {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/Arduino-section-1.jpg"), no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 900;
+  flex-direction: column;
+  width: 100%;
+}
+
+#presentation .description {
+  font-size: 12px;
+  margin-top: 15px;
+  font-weight: 100;
+}
+
+#history {
+  height: 160vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px 20px;
+  border-top: rgb(128, 128, 128) solid 1px;
+  border-bottom: rgb(128, 128, 128) solid 1px;
+}
+
+.history-accordion {
+  margin-right: auto;
+  border-right: rgb(128, 128, 128) solid 1px;
+  padding: 0 40px;
+  height: 149vh;
+}
+
+.accordion {
+  background-color: rgb(232, 255, 244);
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #00a2b4;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .2s ease-out;
+}
+
+#history > div.history-accordion {
+  width: 60%;
+}
+
+button.accordion {
+  border-bottom: rgb(209, 209, 209) solid 1px;
+}
+
+.history-accordion > div:first-child {
+  margin: 50px 0px;
+  color: #000;
+  font-weight: bold;
+  line-height: 20px;
+  font-size: 20px;
+}
+
+#hardware {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  border-bottom: rgb(128, 128, 128) solid 1px;
+}
+
+#hardware > div {
+  width: 75%;
+}
+
+#hardware > div > h1 {
+  letter-spacing: 2px;
+  font-weight: bolder;
+  font-size: 34px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#hardware > div > div {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#software {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+#software h1 {
+  margin-bottom: 15px;
+}
+
+.content-download {
+  display: flex;
+}
+
+.download {
+  padding: 28px;
+  flex: 60% 1;
+  background-color: #ededed;
+}
+
+.download img {
+  width: 72px;
+  margin-right: 28px;
+}
+.download h2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.options {
+  padding: 28px;
+  background-color: #007582;
+  flex: 33% 1;
+  flex-direction: column;
+  color: #fff;
+}
+
+.options > div {
+  margin-bottom: 12px;
+}
+
+.options > div > a {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+}
+
+.options > div > a > span:first-child {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 900px) {
+  #history {
+    justify-content: center;
+    align-items: start;
+    height: 220vh;
+  }
+
+  #history > div {
+    margin: 0;
+    border: none;
+  }
+}
