@@ -1,0 +1,13 @@
+a. Se crea una tabla "marcas", con una id como clave primaria, también contiene el nombre y la ciudad de la marca,
+b. Se crea una tabla "coches", con un codigo de coche como clave primaria, también menciona el nombre y el modelo del auto.
+c. Se crea una tabla "marco", que se conecta con las dos tablas anteriores.
+d. Se esta añadiendo valores a la tabla marcas.
+e. Se seleccionan todos los valores de marcas.
+f. Se seleccionan todos los nombres y ciudades de marcas.
+g. Se selecciona el nombre y la ciudad de marcas cuando id = 2.
+h. Se selecciona el nombre y la ciudad de la marca cuando la ciudad es Neuqúen.
+i. Se selecciona el nombre y la ciudad de la marca cuando la ciudad empieza por S.
+j. Se cambia la ciudad de la marca por Neuqúen cuando el nombre original es Jujuy.
+Alumno: Máximo Leonel Di Gialleonardo.
+Curso: 7° 4°.
+Materia: Bases de Datos.
