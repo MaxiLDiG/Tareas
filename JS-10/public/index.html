@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="name-section">
+        <h1>Hangman</h1>
+        <div id="data">
+          <input type="text" id="name" placeholder="Nickname" required autofocus>
+          <button id="start-game">START</button>
+        </div>
+  </div>
+    
+  <div id="game-section" style="display: none;">
+    <h2>Hangman</h2>
+    <div id="word-display"></div>
+    <p>Remaining attempts: <span id="attempts-left">6</span></p>
+    <p><span id="used-letters"></span></p>
+    <span id="game-timer">0</span>
+    <div id="hangman-drawing"></div>
+  </div>
+  
+    
+  <div id="game-over-section" style="display: none;">
+    <h3>Table of scores:</h3>
+    <table id="scores-table">
+        <tr>
+            <th>Name</th>
+            <th>Points</th>
+            <th>Time</th>
+            <th>Date</th>
+        </tr>
+    </table>
+    <button id="play-again" style="display: none;">Play again</button>
+  </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
