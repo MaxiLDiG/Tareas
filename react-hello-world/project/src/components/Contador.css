@@ -1,0 +1,14 @@
+.contador {
+  text-align: center;
+}
+
+button {
+  margin: 5px;
+  padding: 20px 40px;
+  font-size: 16px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background-color: #e1e1e1;
+  cursor: pointer;
+}
