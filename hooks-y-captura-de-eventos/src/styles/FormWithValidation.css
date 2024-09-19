@@ -1,0 +1,21 @@
+.form-validation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+input {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+}
+
+span {
+  color: red;
+  font-size: 12px;
+}

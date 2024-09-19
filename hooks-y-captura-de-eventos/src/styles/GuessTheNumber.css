@@ -1,0 +1,20 @@
+.guess-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 1px;
+  border: none;
+  outline: none;
+  background-color: rgb(0, 132, 255);
+}
